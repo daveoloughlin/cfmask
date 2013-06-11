@@ -1,0 +1,2 @@
+GetSpaceDefFile in space.c reads out everything in "*_carbon_met.txt" file, it 
+uses GetLine and StringParse to get "Parameter" and "value" in "*_carbon_met.txt" data.  
