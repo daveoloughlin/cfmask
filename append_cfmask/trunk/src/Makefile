@@ -23,6 +23,7 @@ clean:
 
 install:
 	cp $(TARGET) $(BIN)
+	cp ../scripts/do_append_cfmask.py $(BIN)
 
 #
 # Rules
