@@ -152,7 +152,6 @@ class AppendCfmask():
         if exit_code != 0:
             msg = 'Error running cfmask_append.  Processing will terminate.'
             logIt (msg, log_handler)
-            os.chdir (mydir)
             return ERROR
         
         # successful completion.
