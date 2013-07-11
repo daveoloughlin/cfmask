@@ -31,7 +31,7 @@ This will create an append_cfmask executable under $BIN(tested in gcc  compiler)
 
 * Note that if the HDF library was configured and built with szip support, then the user will also need to add "-L$(SZIPLIB) -lsz" at the end of the library defines in the Makefiles.  The user should also add "-I$(SZIPINC)" to the include directory defines in the Makefile.
 
-  #: Test - Obtain an lndsr.hdf (from LEDAPS) and fmask.hdf (from cfmask) then run following command
+  #: Test - Obtain an lndsr.hdf (from LEDAPS) and fmask.hdf (from cfmask) then run the following command
 {{{
 append_cfmask -sr <lndsr_HDF_file> -cfmask <cfmask_HDF_file>
 }}}
