@@ -5,7 +5,7 @@ Release Date: July 12, 2013
 
 === Downloads ===
 
-* Spectral indices source code - available via the [https://code.google.com/p/spectral-indices/source/checkout spectral-indices Google Projects Source] link
+* append_cfmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask and append_cfmask Google Projects Source] link
 
 === Installation ===
 Same installation instructions as for Version 1.0.0
