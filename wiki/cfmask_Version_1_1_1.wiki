@@ -28,7 +28,7 @@ make install
 }}}
 This will create an cfmask executable under $BIN(tested in gcc  compiler)
 
-  #: Test - Obtain an lndsr.hdf (from LEDAPS) and fmask.hdf (from cfmask) then run the following command
+  #: Test - Obtain a lndth.hdf file, a lndcal file, and a metadata file (from LEDAPS) then run the following command
 {{{
 cfmask --metadata=input_metadata_filename_with_full_path
 }}}
@@ -42,6 +42,7 @@ lndsr.hdf: should now contain the fmask band as an additional SDS in the lndsr.h
   * openCV libraries
   * HDF4 libraries
   * HDF-EOS2 libraries
+  * Python 2.7 and Scipy 
 
 === Verification Data ===
 
