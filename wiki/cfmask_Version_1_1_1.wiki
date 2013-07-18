@@ -1,6 +1,6 @@
 #summary Version 1.1.1 (initial release) of the cfmask software.
 
-== append_cfmask Version 1.1.1 Release Notes ==
+== cfmask Version 1.1.1 Release Notes ==
 Release Date: July 18, 2013
 
 === Downloads ===
