@@ -34,7 +34,7 @@ cfmask --metadata=input_metadata_filename_with_full_path
 }}}
   #: Check output
 {{{
-lndsr.hdf: should now contain the fmask band as an additional SDS in the lndsr.hdf product
+fmask.<scene_name>.hdf: should contain only one fmask_band in the HDF output file
 }}}
 
 === Dependencies ===
