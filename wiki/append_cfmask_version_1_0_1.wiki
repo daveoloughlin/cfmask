@@ -1,4 +1,4 @@
-#summary Version 1.1.0 of the Landsat spectral indices software.
+#summary Version 1.1.0 of the append_cfmask software.
 
 == append cfmask Version 1.0.1 Release Notes ==
 Release Date: July 12, 2013
