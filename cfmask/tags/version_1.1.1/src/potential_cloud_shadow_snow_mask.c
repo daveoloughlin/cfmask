@@ -776,12 +776,20 @@ bool potential_cloud_shadow_snow_mask
         }
 
         /*Dynamic threshold for land */
-        status = prctile2(prob, index3, prob_min, prob_max, 100.0*h_pt, 
-                          &clr_mask);
-        if (status != SUCCESS)
+        if (index3 != 0)
         {
-	    sprintf (errstr, "Error calling prctile2 routine");
-	    ERROR (errstr, "pcloud");
+            status = prctile2(prob, index3, prob_min, prob_max, 100.0*h_pt, 
+                              &clr_mask);
+            if (status != SUCCESS)
+            {
+	        sprintf (errstr, "Error calling prctile2 routine");
+	        ERROR (errstr, "pcloud");
+            }
+        }
+        else
+        {
+            clr_mask = 22.5; /* no clear land pixel, make clr_mask double of  
+                                cloud_prob_threshold */
         }
         clr_mask += cloud_prob_threshold;
 
