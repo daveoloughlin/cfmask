@@ -1,4 +1,4 @@
-#summary Version 1.1.0 of the Landsat spectral indices software.
+#summary Version 1.1.0 of the cfmask software.
 
 == cfmask Version 1.1.0 Release Notes ==
 Release Date: June 30, 2013
