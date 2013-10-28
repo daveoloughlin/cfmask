@@ -1,4 +1,4 @@
-#summary Version 1.0.0 (initial release) of the append_cfmask software.
+#summary Version 1.0.0 (initial release) of the cfmask software.
 
 == cfmask Version 1.0.0 Release Notes ==
 Release Date: Feb 28, 2013
