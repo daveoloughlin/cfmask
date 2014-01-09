@@ -25,12 +25,12 @@ Same scripts as for Version 1.1.1, updated for 1.1.1.
 
 
 == Changes From Previous Version ==
-====Updates on July 12, 2013 - USGS EROS====
-  * src
-    # Modified cfmask code to read each band gain/bias from HDF attributes instead of from LEDAPS metadata file (need LEDAPS 1.3.1). Need TOA reflectance file instead of metadata file as input.
-    # Added in upside down scene handling for polar steoreographic scene in cfmask. 
-    # Standardized code per peer-review comments on version 1.1.2.   
-
-  * scripts
-    # Modified fillminima.py add in when boundaryval is 0.0, then set it to hMax, which will fix the whole water scene when no land clear-sky pixel existed scenario for cfmask code.
-    # Standardized code per peer-review comments on version 1.1.2.
+====Updates on January XX, 2014 - USGS EROS====
+  * CFmask 1.2.0 - Based on new Fmask v3.2 matlab code.
+  * CFmask 1.2.1 - Code cleanup and memory usage enhancements.
+    # Use a dynamic cloud over water threshold instead of a fixed value.
+    # Remove the use of majority-filter functions on cloud pixels.
+    # Remove the temperature screen for snow masking (because of omission of snow and this has also changed in MODIS C6).
+    # Remove  the high probability test (because of constant false cloud masking).
+    # Remove the opencv image_dilute function usage, instead using my self-implemented "image_dilate" which simulates the matlab image dilute used in Fmask code exactly. But my default "dilute_buffer" is 2*2+1 = 5 pixels instead of 2*3+1 = 7 pixels in Fmask.
+    # Fixed a few bugs, couple of them are in Fmask matlab code and couple of them are in CFmask code. 
