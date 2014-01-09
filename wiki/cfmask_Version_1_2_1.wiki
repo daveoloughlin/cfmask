@@ -37,8 +37,10 @@ fmask.<scene_name>.hdf: should contain only one fmask_band in the HDF output fil
 }}}
 
 === Dependencies ===
-No longer any dependencies on using the openCV library.
-Remaining dependencies are same as for Version 1.1.1
+  * GCTP libraries
+  * HDF4 libraries
+  * HDF-EOS2 libraries
+  * Python 2.7 and Scipy 
 
 === Associated Scripts ===
 Same scripts as for Version 1.1.1, updated for 1.1.1.
