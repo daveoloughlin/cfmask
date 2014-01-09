@@ -29,6 +29,7 @@ Same scripts as for Version 1.1.1, updated for 1.1.1.
   * CFmask 1.2.0 - Based on new Fmask v3.2 matlab code.
   * CFmask 1.2.1 - Code cleanup and memory usage enhancements.
     # Use a dynamic cloud over water threshold instead of a fixed value.
+
     # Remove the use of majority-filter functions on cloud pixels.
     # Remove the temperature screen for snow masking (because of omission of snow and this has also changed in MODIS C6).
     # Remove  the high probability test (because of constant false cloud masking).
