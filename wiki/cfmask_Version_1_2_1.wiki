@@ -1,13 +1,36 @@
-#summary One-sentence summary of this page.
+#summary Version 1.2.1 of the cfmask software.
 
-= Introduction =
+== cfmask Version 1.2.1 Release Notes ==
+Release Date: January XX, 2014
 
-Add your content here.
+=== Downloads ===
+
+* cfmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask Google Projects Source] link
+
+=== Installation ===
+Same installation instructions as for Version 1.1.1
+
+=== Dependencies ===
+Same dependencies as for Version 1.1.1
+
+=== Associated Scripts ===
+Same scripts as for Version 1.1.1, updated for 1.1.1.
+
+=== Verification Data ===
+
+=== User Manual ===
+./cfmask --toarefl=/path_to/lndcal.L5010054_05420110312.hdf --prob=22.5 --cldpix=3 --sdpix=3 --write_binary --verbose
+
+=== Product Guide ===
 
 
-= Details =
+== Changes From Previous Version ==
+====Updates on July 12, 2013 - USGS EROS====
+  * src
+    # Modified cfmask code to read each band gain/bias from HDF attributes instead of from LEDAPS metadata file (need LEDAPS 1.3.1). Need TOA reflectance file instead of metadata file as input.
+    # Added in upside down scene handling for polar steoreographic scene in cfmask. 
+    # Standardized code per peer-review comments on version 1.1.2.   
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * scripts
+    # Modified fillminima.py add in when boundaryval is 0.0, then set it to hMax, which will fix the whole water scene when no land clear-sky pixel existed scenario for cfmask code.
+    # Standardized code per peer-review comments on version 1.1.2.
