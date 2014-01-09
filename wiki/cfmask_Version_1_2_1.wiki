@@ -66,3 +66,4 @@ Same scripts as for Version 1.1.1, updated for 1.2.1.
     # Fixed a few bugs, couple of them are in Fmask matlab code and couple of them are in CFmask code. 
   * CFmask 1.2.1 - Code cleanup and memory usage enhancements.
     # Minor update to scripts for memory usage.
+    # Updates to source for memory usage.
