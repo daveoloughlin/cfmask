@@ -43,7 +43,7 @@ fmask.<scene_name>.hdf: should contain only one fmask_band in the HDF output fil
   * Python 2.7 and Scipy 
 
 === Associated Scripts ===
-Same scripts as for Version 1.1.1, updated for 1.1.1.
+Same scripts as for Version 1.1.1, updated for 1.2.1.
 
 === Verification Data ===
 
