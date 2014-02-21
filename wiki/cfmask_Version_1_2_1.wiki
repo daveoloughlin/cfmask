@@ -7,6 +7,9 @@ Release Date: January XX, 2014
 
 * cfmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask Google Projects Source] link
 
+  * Non-members may check out a read-only working copy anonymously over HTTP.
+  * svn checkout http://cfmask.googlecode.com/svn/cfmask/tags/version_1.2.1 cfmask-read-only 
+
 === Installation ===
   # Install dependent libraries - HDF-EOS GCTP, HDF4, HDF-EOS2
   # Set up environment variables.  Can create an environment shell file or add the following to your bash shell.  For C shell, use 'setenv VAR "directory"'.  
