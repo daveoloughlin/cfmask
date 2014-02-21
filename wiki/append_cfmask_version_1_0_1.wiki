@@ -7,6 +7,9 @@ Release Date: July 12, 2013
 
 * append_cfmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask and append_cfmask Google Projects Source] link
 
+  * Non-members may check out a read-only working copy anonymously over HTTP.
+  * svn checkout http://cfmask.googlecode.com/svn/append_cfmask/tags/version_1.0.1 append_cfmask-read-only 
+
 === Installation ===
 Same installation instructions as for Version 1.0.0
 
