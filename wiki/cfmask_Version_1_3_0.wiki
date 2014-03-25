@@ -5,7 +5,7 @@ Release Date: March 28, 2014
 
 === Downloads ===
 
-* cfmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask Google Projects Source] link
+* cfmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask] Google Projects Source link
 
   * Non-members may check out a read-only working copy anonymously over HTTP.
   * svn checkout http://cfmask.googlecode.com/svn/cfmask/tags/version_1.3.0 cfmask-read-only 
@@ -30,7 +30,7 @@ make install
 }}}
 This will create a cfmask executable under $BIN(tested in gcc  compiler)
 
-  #: Test - Obtain a lndth.hdf file, a lndcal.hdf file, and a metadata file (from LEDAPS) then run the following command
+  #: Test - Obtain a lndth.hdf file, a lndcal.hdf file, and a metadata file (from [https://code.google.com/p/ledaps/ LEDAPS]) then run the following command
 {{{
 cfmask --toarefl=path_to/lndcal.hdf
 }}}
