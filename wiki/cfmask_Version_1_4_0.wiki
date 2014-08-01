@@ -22,7 +22,7 @@ Release Date: July 29, 2014
     export XML2LIB="path_to_LIBXML2_libraries"
     export ESPAINC="path_to_ESPA_COMMON_include_files"
     export ESPALIB="path_to_ESPA_COMMON_libraries"
-    export ESUN="path_to_EarthSunDistance.txt_file"
+    export ESUN="path_to_EarthSunDistance.txt_file" # included with source
 }}}
   # Checkout (from Google cfmask project) and install source files
 {{{
