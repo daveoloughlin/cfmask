@@ -54,7 +54,7 @@ Only TM(L4, L5) and ETM+(L7) sensors are supported in this version of CFmask.
 
 ==== Example Usage ====
 {{{
-cfmask --xml=LT50770132008180GLC00.xml --prob=22.5 --cldpix=3 --sdpix=3 --write_binary --verbose
+cfmask --xml=LT50770132008180GLC00.xml --prob=22.5 --cldpix=3 --sdpix=3 --verbose
 }}}
 
 === Product Guide ===
