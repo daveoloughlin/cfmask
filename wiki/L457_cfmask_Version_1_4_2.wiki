@@ -1,13 +1,68 @@
-#summary One-sentence summary of this page.
+#summary Version 1.4.2 of the CFmask software for L457.
 
-= Introduction =
+== CFmask Version 1.4.2 Release Notes ==
+Release Date: December XX, 2014
 
-Add your content here.
+=== Downloads ===
+
+* CFmask source code - available via the [http://code.google.com/p/cfmask/source/checkout cfmask] Google Projects Source link
+
+  * Non-members may check out a read-only working copy anonymously over HTTP.
+  * svn checkout http://cfmask.googlecode.com/svn/cfmask/releases/version_1.4.2 cfmask-read-only 
+
+=== Dependencies ===
+  * ESPA raw binary libraries and tools in the [https://code.google.com/p/espa-common/ espa_common] Google Project
+  * Python 2.7 and Scipy 
+
+=== Installation ===
+  # Install dependent libraries - LIBXML2, ESPA_COMMON
+  # Set up environment variables.  Can create an environment shell file or add the following to your bash shell.  For C shell, use 'setenv VAR "directory"'.  
+{{{
+    export XML2INC="path_to_LIBXML2_include_files"
+    export XML2LIB="path_to_LIBXML2_libraries"
+    export ESPAINC="path_to_ESPA_COMMON_include_files"
+    export ESPALIB="path_to_ESPA_COMMON_libraries"
+    export ESUN="path_to_EarthSunDistance.txt_file" # included with source
+}}}
+  # Checkout (from Google cfmask project) and install source files
+{{{
+cd cfmask/src
+make
+make install
+}}}
+This will create a cfmask executable under $BIN(tested in gcc  compiler)
+
+  #: Test - Obtain TOA and BT bands along with the ESPA metadata XML file (from [https://code.google.com/p/ledaps/ LEDAPS] output) then run the following command
+{{{
+cfmask --xml=<scene_id>.xml
+}}}
+  #: Check for output of a raw binary fmask band with an associated ENVI header
+{{{
+<scene_id>_fmask.hdr
+<scene_id>_fmask.img
+}}}
+
+=== Associated Scripts ===
+Same scripts as for Version 1.3.1.
+
+=== Verification Data ===
+
+=== User Manual ===
+See "cfmask --help" for details about command line options.
+
+Only TM(L4, L5) and ETM+(L7) sensors are supported in this version of CFmask.
+
+==== Example Usage ====
+{{{
+cfmask --xml=LT50770132008180GLC00.xml --prob=22.5 --cldpix=3 --sdpix=3 --write_binary --verbose
+}}}
+
+=== Product Guide ===
 
 
-= Details =
+== Changes From Previous Version ==
+==== Updates on December XX, 2014 - USGS EROS ====
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * CFmask 1.4.2 - Based on Fmask v3.3 matlab code.
+    # Updated for some minor bug fixes and speed improvments
+    # Updated to clean-up the code base
